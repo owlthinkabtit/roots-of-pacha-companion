@@ -45,6 +45,8 @@ const styles = StyleSheet.create({
   container: {
     padding: 24,
     alignItems: "center",
+    backgroundColor: "#ffffff",
+    minHeight: "100%",
   },
   title: {
     fontSize: 28,
@@ -80,12 +82,6 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: "center",
     color: "red",
-  },
-  container: {
-    padding: 24,
-    alignItems: "center",
-    backgroundColor: "#ffffff",
-    minHeight: "100%",
   },
 });
 
