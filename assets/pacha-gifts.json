@@ -14,7 +14,8 @@
     ],
     "birthday": "Winter 15",
     "image": "https://rootsofpacha.wiki.gg/images/6/6b/Igrork_Portrait.png?329efd&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
   },
   "Garrek": {
     "loves": [
@@ -29,7 +30,9 @@
     ],
     "birthday": "Spring 16",
     "image": "https://rootsofpacha.wiki.gg/images/5/5d/Garrek_Portrait.png?702ec1&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": true
+
   },
   "Inza": {
     "loves": [
@@ -48,7 +51,9 @@
     ],
     "birthday": "Fall 12",
     "image": "https://rootsofpacha.wiki.gg/images/f/f2/Inza_Portrait.png?2732c3&format=original",
-    "tribe": "Yakuan Clan"
+    "tribe": "Yakuan Clan",
+    "romanceable": false
+
   },
   "Tare": {
     "loves": [
@@ -69,7 +74,9 @@
     ],
     "birthday": "Summer 18",
     "image": "https://rootsofpacha.wiki.gg/images/b/b6/Tare_Portrait.png?493d19&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Jelrod": {
     "loves": [
@@ -87,7 +94,9 @@
     ],
     "birthday": "Spring 7",
     "image": "https://rootsofpacha.wiki.gg/images/e/e0/Jelrod_Portrait.png?c91b9c&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": true
+
   },
   "Ata": {
     "loves": [
@@ -106,7 +115,9 @@
     ],
     "birthday": "Fall 2",
     "image": "https://rootsofpacha.wiki.gg/images/2/2b/Ata_Portrait.png?c06e29&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Ibon": {
     "loves": [
@@ -124,7 +135,9 @@
     ],
     "birthday": "Spring 16",
     "image": "https://rootsofpacha.wiki.gg/images/f/f4/Ibon_Portrait.png?44e8e1&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": true
+
   },
   "Kocha": {
     "loves": [
@@ -138,7 +151,9 @@
     ],
     "birthday": "Summer 28",
     "image": "https://rootsofpacha.wiki.gg/images/5/53/Kocha_Portrait.png?28b06e&format=original",
-    "tribe": "Yakuan Clan"
+    "tribe": "Yakuan Clan",
+    "romanceable": false
+
   },
   "Voda": {
     "loves": [
@@ -157,7 +172,9 @@
     ],
     "birthday": "Winter 6",
     "image": "https://rootsofpacha.wiki.gg/images/4/4f/Voda_Portrait.png?936a2a&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": true
+
   },
   "Ugvin": {
     "loves": [
@@ -175,7 +192,9 @@
     ],
     "birthday": "Spring 17",
     "image": "https://rootsofpacha.wiki.gg/images/a/aa/Ugvin_Portrait.png?e858bc&format=original",
-    "tribe": "Yakuan Clan"
+    "tribe": "Yakuan Clan",
+    "romanceable": false
+
   },
   "Sayra": {
     "loves": [
@@ -191,7 +210,9 @@
     ],
     "birthday": "Fall 23",
     "image": "https://rootsofpacha.wiki.gg/images/5/55/Sayra_Portrait.png?667633&format=original",
-    "tribe": "Yakuan Clan"
+    "tribe": "Yakuan Clan",
+    "romanceable": true
+
   },
   "Granan": {
     "loves": [
@@ -200,7 +221,9 @@
     ],
     "birthday": "Summer 26",
     "image": "https://rootsofpacha.wiki.gg/images/4/4f/Granan_Portrait.png?b0f2bf&format=original",
-    "tribe": "Mograni Clan"
+    "tribe": "Mograni Clan",
+    "romanceable": false
+
   },
   "Acre": {
     "loves": [
@@ -216,7 +239,9 @@
     ],
     "birthday": "Winter 17",
     "image": "https://rootsofpacha.wiki.gg/images/5/50/Acre_Portrait.png?8edb1e&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Azkel": {
     "loves": [
@@ -228,7 +253,9 @@
     ],
     "birthday": "Winter 18",
     "image": "https://rootsofpacha.wiki.gg/images/e/ec/Azkel_Portrait.png?5919e1&format=original",
-    "tribe": "Mograni Clan"
+    "tribe": "Mograni Clan",
+    "romanceable": true
+
   },
   "Maeri": {
     "loves": [
@@ -246,7 +273,9 @@
     ],
     "birthday": "Winter 20",
     "image": "https://rootsofpacha.wiki.gg/images/8/8a/Maeri_Portrait.png?e86acb&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Solo": {
     "loves": [
@@ -257,7 +286,9 @@
     ],
     "birthday": "Winter 2",
     "image": "https://rootsofpacha.wiki.gg/images/a/a3/Solo_Portrait.png?846a0a&format=original",
-    "tribe": "Yakuan Clan"
+    "tribe": "Yakuan Clan",
+    "romanceable": false
+
   },
   "Havri": {
     "loves": [
@@ -270,7 +301,9 @@
     ],
     "birthday": "Spring 10",
     "image": "https://rootsofpacha.wiki.gg/images/2/21/Havri_Portrait.png?610d37&format=original",
-    "tribe": "Mograni Clan"
+    "tribe": "Mograni Clan",
+    "romanceable": false
+
   },
   "Vuak": {
     "loves": [
@@ -285,7 +318,9 @@
     ],
     "birthday": "Summer 12",
     "image": "https://rootsofpacha.wiki.gg/images/0/02/Vuak_Portrait.png?138898&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Tetih": {
     "loves": [
@@ -305,7 +340,9 @@
     ],
     "birthday": "Spring 5",
     "image": "https://rootsofpacha.wiki.gg/images/3/3f/Tetih_Portrait.png?b241e0&format=original",
-    "tribe": "Pacha Clan"
+    "tribe": "Pacha Clan",
+    "romanceable": false
+
   },
   "Okka": {
     "loves": [
@@ -319,7 +356,8 @@
     ],
     "birthday": "Winter 24",
     "image": "https://rootsofpacha.wiki.gg/images/7/7d/Okka_Portrait.png?61744b&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Grob": {
     "loves": [
@@ -335,7 +373,8 @@
     ],
     "birthday": "Summer 3",
     "image": "https://rootsofpacha.wiki.gg/images/4/40/Grob_Portrait.png?b76b2f&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Brah": {
     "loves": [
@@ -355,7 +394,8 @@
     ],
     "birthday": "Spring 25",
     "image": "https://rootsofpacha.wiki.gg/images/8/81/Brah_Portrait.png?31f37d&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Tayta": {
     "loves": [
@@ -368,7 +408,8 @@
     ],
     "birthday": "Winter 24",
     "image": "https://rootsofpacha.wiki.gg/images/c/c1/Tayta_Portrait.png?6765c4&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Koli": {
     "loves": [
@@ -377,7 +418,8 @@
     ],
     "birthday": "Fall 3",
     "image": "https://rootsofpacha.wiki.gg/images/d/d6/Koli_Portrait.png?5f27d8&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Vor": {
     "loves": [
@@ -394,7 +436,8 @@
     ],
     "birthday": "Spring 10",
     "image": "https://rootsofpacha.wiki.gg/images/d/db/Vor_Portrait.png?ce8acc&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Nann": {
     "loves": [
@@ -406,7 +449,8 @@
     ],
     "birthday": "Winter 9",
     "image": "https://rootsofpacha.wiki.gg/images/7/7c/Nann_Portrait.png?713b82=&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Reese": {
     "loves": [
@@ -426,7 +470,8 @@
     ],
     "birthday": "Winter 7",
     "image": "https://rootsofpacha.wiki.gg/images/f/f1/Reese_Portrait.png?cf1dd3&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Mana": {
     "loves": [
@@ -443,7 +488,8 @@
     ],
     "birthday": "Summer 14",
     "image": "https://rootsofpacha.wiki.gg/images/3/36/Mana_Portrait.png?784564&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Zelk": {
     "loves": [
@@ -463,7 +509,8 @@
     ],
     "birthday": "Spring 11",
     "image": "https://rootsofpacha.wiki.gg/images/e/e8/Zelk_Portrait.png?628275=&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Vallah": {
     "loves": [
@@ -483,7 +530,8 @@
     ],
     "birthday": "Winter 1",
     "image": "https://rootsofpacha.wiki.gg/images/3/3f/Vallah_Portrait.png?1890e5&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": true
   },
   "Ash": {
     "loves": [
@@ -497,7 +545,8 @@
     ],
     "birthday": "Spring 23",
     "image": "https://rootsofpacha.wiki.gg/images/9/92/Ash_Portrait.png?5703fb&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Brub": {
     "loves": [
@@ -513,7 +562,8 @@
     ],
     "birthday": "Winter 13",
     "image": "https://rootsofpacha.wiki.gg/images/b/b0/Brub_Portrait.png?b8beb5&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Illoe": {
     "loves": [
@@ -532,7 +582,8 @@
     ],
     "birthday": "Spring 28",
     "image": "https://rootsofpacha.wiki.gg/images/5/52/Illoe_Portrait.png?55e804&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Gin": {
     "loves": [
@@ -549,7 +600,8 @@
     ],
     "birthday": "Fall 20",
     "image": "https://rootsofpacha.wiki.gg/images/9/9f/Gin_Portrait.png?d976a6&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Nari": {
     "loves": [
@@ -568,7 +620,8 @@
     ],
     "birthday": "Summer 17",
     "image": "https://rootsofpacha.wiki.gg/images/5/5d/Nari_Portrait.png?e277a1&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Ada": {
     "loves": [
@@ -586,7 +639,8 @@
     ],
     "birthday": "Spring 4",
     "image": "https://rootsofpacha.wiki.gg/images/6/6e/Ada_Portrait.png?8ee21c&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Jukk": {
     "loves": [
@@ -606,7 +660,8 @@
     ],
     "birthday": "Summer 23",
     "image": "https://rootsofpacha.wiki.gg/images/e/ec/Jukk_Portrait.png?28bd71&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Cohh": {
     "loves": [
@@ -620,7 +675,8 @@
     ],
     "birthday": "Spring 25",
     "image": "https://rootsofpacha.wiki.gg/images/b/bb/Cohh_Portrait.png?8063bd&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Jizu": {
     "loves": [
@@ -638,7 +694,8 @@
     ],
     "birthday": "Summer 20",
     "image": "https://rootsofpacha.wiki.gg/images/c/c7/Jizu_Portrait.png?4211e5&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Fayra": {
     "loves": [
@@ -651,7 +708,8 @@
     ],
     "birthday": "Fall 20",
     "image": "https://rootsofpacha.wiki.gg/images/6/64/Fayra_Portrait.png?6043d6&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Touk": {
     "loves": [
@@ -674,7 +732,8 @@
     ],
     "birthday": "Fall 10",
     "image": "https://rootsofpacha.wiki.gg/images/d/da/Touk_Portrait.png?577329&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": true
   },
   "Zeda": {
     "loves": [
@@ -696,7 +755,8 @@
     ],
     "birthday": "Fall 28",
     "image": "https://rootsofpacha.wiki.gg/images/4/4d/Zeda_Portrait.png?f55e64&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Javvi": {
     "loves": [
@@ -708,7 +768,8 @@
     ],
     "birthday": "Summer 4",
     "image": "https://rootsofpacha.wiki.gg/images/a/a9/Javvi_Portrait.png?c8db7d&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Krak": {
     "loves": [
@@ -726,7 +787,8 @@
     ],
     "birthday": "Fall 22",
     "image": "https://rootsofpacha.wiki.gg/images/a/a2/Krak_Portrait.png?64ec47&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": true
   },
   "Era": {
     "loves": [
@@ -744,7 +806,8 @@
     ],
     "birthday": "Fall 11",
     "image": "https://rootsofpacha.wiki.gg/images/7/71/Era_Portrait.png?633a5a&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Frer": {
     "loves": [
@@ -760,7 +823,8 @@
     ],
     "birthday": "Summer 18",
     "image": "https://rootsofpacha.wiki.gg/images/0/0e/Frer_Portrait.png?4a5258&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Ron": {
     "loves": [
@@ -773,7 +837,8 @@
     ],
     "birthday": "Fall 6",
     "image": "https://rootsofpacha.wiki.gg/images/1/1b/Ron_Portrait.png?5385a5&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Hunna": {
     "loves": [
@@ -781,7 +846,8 @@
     ],
     "birthday": "Fall 16",
     "image": "https://rootsofpacha.wiki.gg/images/a/ad/Hunna_Portrait.png?2216bf&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Todu": {
     "loves": [
@@ -789,7 +855,8 @@
     ],
     "birthday": "Fall 24",
     "image": "https://rootsofpacha.wiki.gg/images/d/d8/Todu_Portrait.png?bb8a5e&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Dag": {
     "loves": [
@@ -799,7 +866,8 @@
     ],
     "birthday": "Spring 3",
     "image": "https://rootsofpacha.wiki.gg/images/2/29/Dag_Portrait.png?d3e348&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Jiyla": {
     "loves": [
@@ -813,7 +881,8 @@
     ],
     "birthday": "Fall 7",
     "image": "https://rootsofpacha.wiki.gg/images/a/a7/Jiyla_Portrait.png?d4526c&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Pellek": {
     "loves": [
@@ -827,7 +896,8 @@
     ],
     "birthday": "Winter 21",
     "image": "https://rootsofpacha.wiki.gg/images/5/5b/Pellek_Portrait.png?ba04b7&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   },
   "Nokk": {
     "loves": [
@@ -849,7 +919,8 @@
     ],
     "birthday": "Spring 22",
     "image": "https://rootsofpacha.wiki.gg/images/1/19/Nokk_Portrait.png?60b450=&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Anda": {
     "loves": [
@@ -861,7 +932,8 @@
     ],
     "birthday": "Summer 1",
     "image": "https://rootsofpacha.wiki.gg/images/b/b4/Anda_Portrait.png?e4fd8c&format=original",
-    "tribe":"Mograni Clan"
+    "tribe":"Mograni Clan",
+    "romanceable": false
   },
   "Jag": {
     "loves": [
@@ -876,7 +948,8 @@
     ],
     "birthday": "Fall 8",
     "image": "https://rootsofpacha.wiki.gg/images/6/6a/Jag_Portrait.png?aec5d5&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": true
   },
   "Croll": {
     "loves": [
@@ -892,7 +965,8 @@
     ],
     "birthday": "Fall 18",
     "image": "https://rootsofpacha.wiki.gg/images/5/5c/Croll_Portrait.png?c334cf&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Daari": {
     "loves": [
@@ -908,7 +982,8 @@
     ],
     "birthday": "Winter 8",
     "image": "https://rootsofpacha.wiki.gg/images/7/75/Daari_Portrait.png?de6d78&format=original",
-    "tribe":"Pacha Clan"
+    "tribe":"Pacha Clan",
+    "romanceable": false
   },
   "Akhi": {
     "loves": [
@@ -923,6 +998,7 @@
     ],
     "birthday": "Spring 28",
     "image": "https://rootsofpacha.wiki.gg/images/d/d0/Akhi_Portrait.png?419e9d&format=original",
-    "tribe":"Yakuan Clan"
+    "tribe":"Yakuan Clan",
+    "romanceable": false
   }
 }

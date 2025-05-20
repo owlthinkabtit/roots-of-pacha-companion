@@ -17,16 +17,20 @@ type CharacterData = {
   birthday: string;
   image: string;
   tribe: string;
+  romanceable: boolean;
 };
 
 const characters = Object.entries(data) as [string, CharacterData][];
 
 const CharactersIndexPage = () => {
   const [searchText, setSearchText] = useState("");
+  const [showRomanceableOnly, setShowRomanceableOnly] = useState(false);
 
-  const filteredCharacters = characters.filter(([name]) =>
-  name.toLowerCase().includes(searchText.toLowerCase())
-);
+  const filteredCharacters = characters
+    .filter(([name]) => name.toLowerCase().includes(searchText.toLowerCase()))
+    .filter(([_, character]) =>
+      showRomanceableOnly ? character.romanceable : true
+    );
 
   const groupedByTribe = filteredCharacters.reduce(
     (groups, [name, character]) => {
@@ -42,6 +46,17 @@ const CharactersIndexPage = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.list}>
+      <Pressable
+        onPress={() => setShowRomanceableOnly((prev) => !prev)}
+        style={styles.toggleButton}
+      >
+        <Text style={styles.toggleButtonText}>
+          {showRomanceableOnly
+            ? "💔 Show All Characters"
+            : "💘 Show Only Romanceable"}
+        </Text>
+      </Pressable>
+
       <TextInput
         style={styles.searchInput}
         placeholder="Search characters..."
@@ -63,7 +78,9 @@ const CharactersIndexPage = () => {
                 style={styles.image}
                 resizeMode="cover"
               />
-              <Text style={styles.name}>{name}</Text>
+              <Text style={styles.name}>
+                {name} {character.romanceable ? "💖" : ""}
+              </Text>
             </Pressable>
           ))}
         </View>
@@ -112,17 +129,29 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   tribeGroup: {
-  width: '100%',
-  paddingBottom: 24,
-  alignItems: 'center',
+    width: "100%",
+    paddingBottom: 24,
+    alignItems: "center",
+  },
+
+  tribeHeader: {
+    fontSize: 22,
+    fontWeight: "bold",
+    marginVertical: 16,
+    color: "#333",
+    textAlign: "center",
+  },
+  toggleButton: {
+  marginBottom: 12,
+  backgroundColor: '#eee',
+  paddingVertical: 8,
+  paddingHorizontal: 16,
+  borderRadius: 8,
 },
 
-tribeHeader: {
-  fontSize: 22,
-  fontWeight: 'bold',
-  marginVertical: 16,
-  color: '#333',
-  textAlign: 'center',
+toggleButtonText: {
+  fontSize: 16,
+  fontWeight: '500',
 },
 
 });
