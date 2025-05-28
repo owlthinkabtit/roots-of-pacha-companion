@@ -1,47 +1,59 @@
-import { View, Text, Pressable, StyleSheet } from 'react-native';
-import { Linking } from 'react-native';
+import { View, Text, Pressable, StyleSheet, ImageBackground } from 'react-native';
+import { useRouter } from 'expo-router';
 
 export default function HomePage() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.title}>🌿 Roots of Pacha Companion</Text>
-      <Text style={styles.subtitle}>Track birthdays, gifts, and more!</Text>
+  const router = useRouter();
 
-      <Pressable
-        onPress={() => Linking.openURL('/character')}
-        style={styles.button}
-      >
-        <Text style={styles.buttonText}>View Characters</Text>
-      </Pressable>
-    </View>
+  return (
+    <ImageBackground
+      source={require('@/assets/images/rootsHP.png')}
+      style={styles.background}
+      resizeMode="cover"
+    >
+      
+
+      <View style={styles.footer}>
+        <Pressable onPress={() => router.push('/character')} style={styles.button}>
+          <Text style={styles.buttonText}>View Characters</Text>
+        </Pressable>
+      </View>
+    </ImageBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  background: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 60,
+    paddingHorizontal: 24,
+  },
+  content: {
     alignItems: 'center',
-    padding: 24,
-    backgroundColor: '#ffffff',
+    marginTop: 40,
   },
   title: {
-    fontSize: 26,
+    fontSize: 24,
     fontWeight: 'bold',
-    marginBottom: 12,
+    color: '#3B2F2F',
     textAlign: 'center',
+    marginBottom: 8,
   },
   subtitle: {
     fontSize: 16,
-    marginBottom: 24,
-    color: '#555',
+    color: '#3B2F2F',
     textAlign: 'center',
+  },
+  footer: {
+    alignItems: 'center',
+    marginBottom: 50,
   },
   button: {
     paddingVertical: 12,
-    paddingHorizontal: 24,
+    paddingHorizontal: 32,
     backgroundColor: '#4CAF50',
     borderRadius: 8,
+    elevation: 2,
   },
   buttonText: {
     color: '#fff',

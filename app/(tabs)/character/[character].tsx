@@ -1,6 +1,7 @@
 import { useLocalSearchParams } from "expo-router";
 import { ScrollView, Text, Image, StyleSheet, View } from "react-native";
 import data from "@/assets/pacha-gifts.json";
+import LoadingLeafSpinner from "@/components/LoadingLeafSpinner";
 
 type CharacterData = {
   loves: string[];
@@ -10,9 +11,15 @@ type CharacterData = {
 
 const CharacterPage = () => {
   const { character } = useLocalSearchParams();
+  
 
   if (!character || typeof character !== "string") {
-    return <Text style={styles.loading}>Loading...</Text>;
+    return (
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center"}}>
+        <LoadingLeafSpinner />
+        console.log('LoadingLeafSpinner')
+      </View>
+    );
   }
 
   const characterData = data[character as keyof typeof data] as CharacterData;
