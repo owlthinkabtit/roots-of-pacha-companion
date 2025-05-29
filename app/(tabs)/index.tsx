@@ -1,19 +1,26 @@
-import { View, Text, Pressable, StyleSheet, ImageBackground } from 'react-native';
-import { useRouter } from 'expo-router';
+import {
+  View,
+  Text,
+  Pressable,
+  StyleSheet,
+  ImageBackground,
+} from "react-native";
+import { useRouter } from "expo-router";
 
 export default function HomePage() {
   const router = useRouter();
 
   return (
     <ImageBackground
-      source={require('@/assets/images/rootsHP.png')}
+      source={require("@/assets/images/ropappHP.png")}
       style={styles.background}
       resizeMode="cover"
     >
-      
-
       <View style={styles.footer}>
-        <Pressable onPress={() => router.push('/character')} style={styles.button}>
+        <Pressable
+          onPress={() => router.push("/character")}
+          style={styles.button}
+        >
           <Text style={styles.buttonText}>View Characters</Text>
         </Pressable>
       </View>
@@ -24,40 +31,28 @@ export default function HomePage() {
 const styles = StyleSheet.create({
   background: {
     flex: 1,
-    justifyContent: 'space-between',
-    paddingVertical: 60,
-    paddingHorizontal: 24,
+    justifyContent: "flex-end",
   },
   content: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 40,
   },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    color: '#3B2F2F',
-    textAlign: 'center',
-    marginBottom: 8,
-  },
-  subtitle: {
-    fontSize: 16,
-    color: '#3B2F2F',
-    textAlign: 'center',
-  },
   footer: {
-    alignItems: 'center',
+    position: "absolute",
+    alignItems: "center",
     marginBottom: 50,
+    bottom: 250,
+    width: "100%",
   },
   button: {
     paddingVertical: 12,
     paddingHorizontal: 32,
-    backgroundColor: '#4CAF50',
-    borderRadius: 8,
-    elevation: 2,
+    backgroundColor: "#CB6845",
+    borderRadius: 15,
   },
   buttonText: {
-    color: '#fff',
+    color: "#fff",
     fontSize: 16,
-    fontWeight: '600',
+    fontWeight: "600",
   },
 });

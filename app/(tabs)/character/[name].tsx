@@ -2,6 +2,7 @@ import { useLocalSearchParams } from "expo-router";
 import { ScrollView, Text, Image, StyleSheet, View } from "react-native";
 import data from "@/assets/pacha-gifts.json";
 import LoadingLeafSpinner from "@/components/LoadingLeafSpinner";
+import { SafeAreaView } from "react-native-safe-area-context";
 
 type CharacterData = {
   loves: string[];
@@ -10,41 +11,42 @@ type CharacterData = {
 };
 
 const CharacterPage = () => {
-  const { character } = useLocalSearchParams();
-  
+  const { name } = useLocalSearchParams();
 
-  if (!character || typeof character !== "string") {
+  if (!name || typeof name !== "string") {
+    console.log("LoadingLeafSpinner");
     return (
-      <View style={{ flex: 1, justifyContent: "center", alignItems: "center"}}>
+      <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
         <LoadingLeafSpinner />
-        console.log('LoadingLeafSpinner')
       </View>
     );
   }
 
-  const characterData = data[character as keyof typeof data] as CharacterData;
+  const characterData = data[name as keyof typeof data] as CharacterData;
 
   if (!characterData) {
     return <Text style={styles.error}>Character not found</Text>;
   }
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.title}>{character}</Text>
-      <Image
-        source={{ uri: characterData.image }}
-        style={styles.image}
-        resizeMode="contain"
-      />
-      <Text style={styles.label}>Birthday:</Text>
-      <Text style={styles.text}>{characterData.birthday}</Text>
-      <Text style={styles.label}>Loved Gifts:</Text>
-      {characterData.loves.map((gift, index) => (
-        <Text key={index} style={styles.giftItem}>
-          • {gift}
-        </Text>
-      ))}
-    </ScrollView>
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#ffffff" }}>
+      <ScrollView contentContainerStyle={styles.container}>
+        <Text style={styles.title}>{name}</Text>
+        <Image
+          source={{ uri: characterData.image }}
+          style={styles.image}
+          resizeMode="contain"
+        />
+        <Text style={styles.label}>Birthday:</Text>
+        <Text style={styles.text}>{characterData.birthday}</Text>
+        <Text style={styles.label}>Loved Gifts:</Text>
+        {characterData.loves.map((gift, index) => (
+          <Text key={index} style={styles.giftItem}>
+            • {gift}
+          </Text>
+        ))}
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 

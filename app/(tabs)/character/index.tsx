@@ -130,7 +130,7 @@ const CharactersIndexPage = () => {
                 renderItem={({ item: [name, character] }) => (
                   <Pressable
                     key={name}
-                    onPress={() => Linking.openURL(`/character/${name}`)}
+                    onPress={() => router.push(`/character/${name}`)}
                     style={styles.card}
                   >
                     <Image
