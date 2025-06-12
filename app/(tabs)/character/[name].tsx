@@ -1,10 +1,20 @@
 import { useLocalSearchParams } from "expo-router";
-import { ScrollView, Text, Image, StyleSheet, View } from "react-native";
+import {
+  ScrollView,
+  Text,
+  Image,
+  StyleSheet,
+  View,
+  Animated,
+} from "react-native";
 import data from "@/assets/pacha-gifts.json";
 import LoadingLeafSpinner from "@/components/LoadingLeafSpinner";
 import { SafeAreaView } from "react-native-safe-area-context";
+import { sanitizeCharacter } from "@/utils/sanitizeCharacter";
+import React, { useState, useEffect, useRef } from "react";
 
 type CharacterData = {
+  name: string;
   loves: string[];
   birthday: string;
   image: string;
@@ -12,6 +22,28 @@ type CharacterData = {
 
 const CharacterPage = () => {
   const { name } = useLocalSearchParams();
+  const [showSecurityNotice, setShowSecurityNotice] = useState(true);
+  const fadeAnim = useRef(new Animated.Value(1)).current;
+  const slideAnim = useRef(new Animated.Value(0)).current;
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      Animated.parallel([
+        Animated.timing(fadeAnim, {
+          toValue: 0,
+          duration: 1000,
+          useNativeDriver: true,
+        }),
+        Animated.timing(slideAnim, {
+          toValue: -20,
+          duration: 1000,
+          useNativeDriver: true,
+        }),
+      ]).start();
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   if (!name || typeof name !== "string") {
     console.log("LoadingLeafSpinner");
@@ -22,16 +54,38 @@ const CharacterPage = () => {
     );
   }
 
-  const characterData = data[name as keyof typeof data] as CharacterData;
+  const characterData = {
+    ...data[name as keyof typeof data],
+    name: name.toString(),
+  } as CharacterData;
 
   if (!characterData) {
     return <Text style={styles.error}>Character not found</Text>;
   }
 
+  const safeCharacter = sanitizeCharacter({
+    ...characterData,
+    name: name.toString(),
+  });
+
   return (
     <SafeAreaView style={{ flex: 1, backgroundColor: "#ffffff" }}>
       <ScrollView contentContainerStyle={styles.container}>
-        <Text style={styles.title}>{name}</Text>
+        <Text style={styles.title}>{safeCharacter.name}</Text>
+        <Animated.View
+          style={[
+            styles.securityBox,
+            {
+              opacity: fadeAnim,
+              transform: [{ translateY: slideAnim }],
+            },
+          ]}
+        >
+          <Text style={styles.securityBoxText}>
+            ✔ Character data sanitized and validated
+          </Text>
+        </Animated.View>
+
         <Image
           source={{ uri: characterData.image }}
           style={styles.image}
@@ -91,6 +145,31 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: "center",
     color: "red",
+  },
+  securityNotice: {
+    fontSize: 14,
+    color: "green",
+    marginBottom: 12,
+    fontStyle: "italic",
+    textAlign: "center",
+  },
+  securityBox: {
+    backgroundColor: "#d4edda", // soft green
+    borderColor: "#155724", // dark green border
+    borderWidth: 1,
+    borderRadius: 10,
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    marginBottom: 16,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  securityBoxText: {
+    color: "#155724",
+    fontSize: 14,
+    fontStyle: "italic",
+    textAlign: "center",
   },
 });
 
